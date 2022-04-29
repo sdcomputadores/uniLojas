@@ -1,0 +1,19 @@
+.cat__item{
+    display: flex;
+    flex-direction: row;
+
+    flex-wrap: wrap;
+  
+    padding: .5rem;
+    border-radius:50px;
+  
+   font-size: 1.2rem;
+    font-weight: bolder; 
+    cursor: pointer;
+    transition: .3s;
+}
+svg{
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}

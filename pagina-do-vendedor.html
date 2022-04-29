@@ -1,0 +1,162 @@
+
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/base/_reset.css">
+    <link rel="stylesheet" href="assets/css/base/_variaveis.css">
+    <link rel="stylesheet" href="assets/css/base/base.css">
+     <link rel="stylesheet" href="assets/css/normalize.css">  
+    
+    <link rel="stylesheet" href="assets/css/cabecalho.css">
+    <link rel="stylesheet" href="assets/css/botao.css">
+    <link rel="stylesheet" href="assets/css/categorias.css">
+   
+
+    <link rel="stylesheet" href="assets/css/diferenciais.css">
+    <link rel="stylesheet" href="assets/css/planos.css">
+    <link rel="stylesheet" href="assets/css/contato.css">
+    <link rel="stylesheet" href="assets/css/area-de-produtos/produtos.css">
+    <link rel="stylesheet" href="assets/css/lojas.css">
+    <title >UniLojas-v1</title>
+</head>
+<body>
+   <header class="cabecalho ">
+     <section  class="menu">
+       <ul class="menu__mini">
+         <li class="munu__mini__item"> <h1 class="logo">UniLojas</h1><h2 class="logo_desc">MERCADO LOCAL</h2>
+           
+         
+         <li class="munu__mini__item"> <input class="munu__mini__item--buscar" type="text" placeholder="O que deseja encontrar">  </li>
+         <li class="munu__mini__item"> <button class="munu__mini__item--btn-busca botao" >Encontrar</button></li>
+         
+         <li class="munu__mini__item"> <svg class="munu__mini__item--btn-menu" width="64" height="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>menu</title><g fill="none" class="nc-icon-wrapper"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="#8305c6"></path></g></svg>  </li>
+      </ul>
+      <ul class="menu__mini__expandido">
+        
+        <li class="menu__item__expandido   botao__menu"><a href="index.html">        Inìcio</a></li>
+        <li class="menu__item__expandido   botao__menu"><a href="pagina-login.html"> Entrar</a></li>
+        <li class="menu__item__expandido   botao__menu"><a  href="cadastro.html">    Cadastrar</a></li>
+        <li class="menu__item__expandido   botao__menu"><a href="pagina-do-vendedor.html">       Canal do Vendedor</a></li>
+       
+      </ul>
+          
+      <ul class="menu__medio">
+				 
+        <li class="menu__item   botao"><a href="index.html">        Início</a></li>
+        <li class="menu__item   botao"><a href="pagina-login.html"> Entrar</a></li>
+        <li class="menu__item   botao"> <a  href="cadastro.html">Cadastrar</a></li>
+        <li class="menu__item   botao"><a href="pagina-do-vendedor.html"> Canal do Vendedor</a></li>
+       
+        
+      </ul>
+    </section>
+   
+
+  
+   </header> 
+
+   
+   <!--Aqui esta a parte do codigo que careega o baner da loja-->
+   <section class="loja">
+     <div class="carregar__baner">
+    <h1>Mostre sua Loja com um baner bem aqui</h1>
+
+    <form class="upload-imagem">
+      <input type='file' accept='image/*' onchange='openFile(event)'><br>
+      <img class="baner" id='output' >
+
+    </form>
+     
+    <form class="muda_nome">
+    <input class="nome__da__loja-upload" value="" type="text" placeholder="Nome da Loja">
+    <input class="btn" type="submit" value="Mudar nome">
+   </form>
+  </div>
+      <img class="imagem baner" src="http://via.placeholder.com/1000x100 " alt="Sua imagem" width="350" height="150">
+       <p class="nome__da__loja"> </p>
+    </div>
+   </section>
+   
+
+   
+  <!--Aqui caregar as imagens dos produtos  -->
+    
+       <div class="cadastrar__produto">
+        <form class="upload_imagem_produto">
+          <input type='file' accept='image/*' onchange='openFileP(event)'><br>
+          <img id='output_produto ' width="150px%" height="150px">
+          
+        </form>
+           <input class="novo__produto_nome produto" value="" placeholder="Nome do produto" type="text"><br>
+          
+
+        
+          <input class="novo__produto_desc produto" value=""  placeholder="Descreva o produto: modo de uso, garantia, novo,  etc." type="text"><br>
+
+          <input name="preco" id="preco_produto" class="input preco__produto" type="text" placeholder="Preço" data-tipo="preco" required>
+          <label class="input-label " for="preco">Preço</label>          
+          <input class="btn_novo_produto produto" type="submit" value="Pronto">
+           </label>
+
+    
+        </div>
+        <div class="produtos__casatrados">
+            <h1>Produtos Cadastrados</h1>
+            <section class="produtos">
+                <div class="conteudo__produtos">
+                    
+                       
+                      <div class="conteudo__produtos__anuncios">
+
+      
+                          <svg class="left invisivel" width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>keyboard_arrow_left</title><g fill="none" class="nc-icon-wrapper"><path d="M15.41 16.59L10.83 12l4.58-4.59L14 6l-6 6 6 6 1.41-1.41z" fill="#630263"></path></g></svg>
+                          <svg class="right invisivel" width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>keyboard_arrow_right</title><g fill="none" class="nc-icon-wrapper"><path d="M8.59 16.59L13.17 12 8.59 7.41 10 6l6 6-6 6-1.41-1.41z" fill="#630263"></path></g></svg>
+
+                         
+                        
+                          <img  id='img1_produto' class="img__produto invisivel "  src="assets/img/img-a-ser-substituida.png" alt="">
+                          <img  id='img2_produto' class="img__produto invisivel"  src="assets/img/img-a-ser-substituida.png" alt="">
+                          <img  id='img3_produto' class="img__produto invisivel "  src="assets/img/img-a-ser-substituida.png" alt="">
+                          <img  id='img4_produto' class="img__produto invisivel"  src="assets/img/img-a-ser-substituida.png" alt="">
+                          <img  id='img5_produto' class="img__produto"  src="assets/img/img-a-ser-substituida.png" alt="">
+                       
+                       
+                            <p class="nome__produto">Nome do produto</p>
+                            <p class="desc__produto">Descrição do produto</p>
+                            <p class="pre__produto" >R$ 00,00</p>
+                            <p class="localizacao invisivel">Localização</p>
+                            <svg class="svg_locali invisivel" width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>location_on</title><g fill="none" class="nc-icon-wrapper"><path opacity=".3" d="M12 4C9.24 4 7 6.24 7 9c0 2.85 2.92 7.21 5 9.88 2.11-2.69 5-7 5-9.88 0-2.76-2.24-5-5-5zm0 7.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z" fill="#8305c6"></path><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zM7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 2.88-2.88 7.19-5 9.88C9.92 16.21 7 11.85 7 9z" fill="#8305c6"></path><path d="M12 11.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" fill="#8305c6"></path></g></svg>
+                            <p class="ativar">Ativar</p><p class="desativar">Desativar</p><p class="editar">Editar</p>
+                          </div>
+                        
+                     <div class="conteudo__produtos__anuncios">
+                      <img class="img__produto"  src="assets/img/img-a-ser-substituida.png" alt="">
+                   
+                        <h2 class="nome__produto">Nome do produto</h2>
+                        <p class="desc__produto">Descrição do produto</p>
+                        <p class="pre__produto" >R$ 00,00</p>
+                        <p class="localizacao invisivel">Localização</p>
+                        <svg class="svg_locali invisivel" width="24" height="24" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>location_on</title><g fill="none" class="nc-icon-wrapper"><path opacity=".3" d="M12 4C9.24 4 7 6.24 7 9c0 2.85 2.92 7.21 5 9.88 2.11-2.69 5-7 5-9.88 0-2.76-2.24-5-5-5zm0 7.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5z" fill="#8305c6"></path><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zM7 9c0-2.76 2.24-5 5-5s5 2.24 5 5c0 2.88-2.88 7.19-5 9.88C9.92 16.21 7 11.85 7 9z" fill="#8305c6"></path><path d="M12 11.5a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z" fill="#8305c6"></path></g></svg>
+                        <p class="ativar">Ativar</p>
+                        <p class="desativar">Desativar</p>
+                        <p class="editar">Editar</p>
+
+                     </div>   
+                     </div>
+                     </section>
+                   
+
+        </div>
+    </section>
+
+   </body>
+   <script src="./assets/js/app.js" type="module"></script>
+
+<script src="https://github.com/codermarcos/simple-mask-money/releases/download/v3.0.0/simple-mask-money.js"></script>
+<script src="./assets/js/loja.js"></script>
+   </html>

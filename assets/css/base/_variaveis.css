@@ -1,0 +1,72 @@
+:root {
+    --fonte-familia-corpo: 'Montserrat', sans-serif;
+    --fonte-familia-logo: 'Pacifico', cursive;
+
+    --fonte-peso-input: 300;
+
+    --fonte-tamanho-logo: 28px;
+    --fonte-tamanho-cartao-titulo: 28px;
+    --fonte-tamanho-input-label: 20px;
+    --fonte-tamanho-botao: 12px;
+    --fonte-tamanho-formulario-fieldset: 22px;
+    --fonte-tamanho-tabela-cabecalho: 22px;
+    --fonte-tamanho-modal-titulo: 28px;
+    --fonte-tamanho-modal-botao: 28px;
+
+   
+
+        --cor_de_texto: #630263;
+        --cor_de_borda: #68046800;
+        --cor-de-texto_hover: rgb(114, 19, 151);
+        --background_pricipal: #fbff04;
+        --backgroung_segundario: #f7fa4b;
+        --backgroud_fundo: #f5f8b3;
+
+        --cor_de_texto_claro: #dfe2e5;
+        --vermelho-forte: #B72E2E;
+       
+        --cinza-claro: #ecebeb;
+        --cinza-medio: #a8a7a7;
+        --cinza-escuro: #4F4C4C;
+            
+        --fonte-link: #0084FF;
+        --fonte-cinza: #666;
+       
+        
+        
+        --bg-rodape-preto: #333;
+        --bg-chamada-mobile: #00161C;
+        
+        --planos-cartao-start: #56CCF2;
+        --planos-cartao-ultra: #089e3a;
+        --planos-cartao-mega: #E33B3B;
+        
+        --destaques--azul: #a2c9ee;
+        
+        --cor-aviso: #f44336;
+        
+       
+        
+        --font-montserrat : 'Montserrat', sans-serif;
+        
+        
+        --bg-chamada-desktop: #232424;
+        
+        
+    
+    --cor-primaria: #0071ea;
+    --cor-secundaria: #d6eaff;
+    --cor-contraste-escuro: #4D4D4D;
+    --cor-contraste-claro: #fff;
+    --cor-aviso: #df2525;
+    --cor-sucesso: #047900;
+    --cor-transparencia: #4d4d4d33;
+
+    --sombra: 0 5px 10px #55a6ff38;
+}
+
+@media(min-width: 800px) {
+    :root {
+        --fonte-tamanho-logo: 56px;
+    }
+}

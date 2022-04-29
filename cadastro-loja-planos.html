@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/base/_reset.css">
+    <link rel="stylesheet" href="assets/css/base/_variaveis.css">
+    <link rel="stylesheet" href="assets/css/base/base.css">
+     <link rel="stylesheet" href="assets/css/normalize.css">  
+    
+    <link rel="stylesheet" href="assets/css/cabecalho.css">
+    <link rel="stylesheet" href="assets/css/botao.css">
+
+    <link rel="stylesheet" href="assets/css/diferenciais.css">
+    <link rel="stylesheet" href="assets/css/planos.css">
+    <link rel="stylesheet" href="assets/css/contato.css">
+    <link rel="stylesheet" href="assets/css/area-de-produtos/produtos.css">
+
+    <link rel="stylesheet" href="assets/css/componentes/inputs.css">
+
+    <title >UniLojas-v1</title>
+</head>
+<body>
+    <header class="cabecalho ">
+        <section  class="menu">
+          <ul class="menu__mini">
+            <li class="munu__mini__item"> <h1 class="logo">UniLojas</h1><h2 class="logo_desc">MERCADO LOCAL</h2>
+              
+            
+            <li class="munu__mini__item"> <input class="munu__mini__item--buscar" type="text" placeholder="O que deseja encontrar">  </li>
+            <li class="munu__mini__item"> <button class="munu__mini__item--btn-busca botao" >Encontrar</button></li>
+            <li class="munu__mini__item"> <svg class="munu__mini__item--btn-menu" width="64" height="64" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><title>menu</title><g fill="none" class="nc-icon-wrapper"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" fill="#8305c6"></path></g></svg>  </li>
+         </ul>
+         <ul class="menu__mini__expandido">
+           
+           <li class="menu__item__expandido   botao__menu"><a href="index.html">        Inìcio</a></li>
+           <li class="menu__item__expandido   botao__menu"><a href="pagina-login.html"> Entrar</a></li>
+           <li class="menu__item__expandido   botao__menu"><a  href="cadastro.html">    Cadastrar</a></li>
+           <li class="menu__item__expandido   botao__menu"><a href="planos.html">       Canal do Vendedor</a></li>
+          
+         </ul>
+             
+         <ul class="menu__medio">
+				 
+            <li class="menu__item   botao"><a href="index.html">        Início</a></li>
+            <li class="menu__item   botao"><a href="pagina-login.html"> Entrar</a></li>
+            <li class="menu__item   botao"> <a  href="cadastro.html">Cadastrar</a></li>
+            <li class="menu__item   botao"><a href="planos.html"> Canal do Vendedor</a></li>
+           
+            
+        </ul>
+       </section>
+      </header>
+      <section class="cartao__novo">
+        <h2 class="cartao__titulo">Complete seu cadastro</h2>
+        <form action="./cadastro_concluido.html" class="formulario flex flex--coluna">
+            <fieldset>
+                <legend class="formulario__legenda">Informações básicas</legend>
+                <div class="input-container" >
+                    <input name="nome" id="nome" class="input" type="text" placeholder="Nome" data-tipo="nome"  required>
+
+                    <label class="input-label" for="nome">Nome da Loja</label>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
+                <div class="input-container">
+                    <input name="email" id="email" class="input" type="email" placeholder="Email" data-tipo="email" required>
+                    <label class="input-label" for="email">Email Comercial</label>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
+                <div class="input-container">                                             <!-- O que esta desntro dod parenteses sao os conjuntos de regras, a interrogaçao seguido do igual significa o que é permitido, o "." diz exceto quebra de linha  o "*" diz que precisa ter ao menos um desses caracteres, entre colchetes determinanos quais carateres será permitido o fica depois de "?!" significa que nao é permitido -->
+                    <input name="senha" id="senha" class="input" type="password" pattern="^(?=.*[0-9]+.*)(?=.*[a-zA-Z]+.*)[0-9a-zA-Z]{6,10}$" title="A senha deve conter entre 6-8 caracteres, numeros de 0-9 , letras maiusculas e letras minuscaulas" placeholder="Senha" data-tipo="senha" required>
+                    <label class="input-label" for="senha">Nova Senha</label>
+
+                    <span class="input-mensagem-erro">Senha invalida</span>
+
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend class="formulario__legenda">Informações Adicionais</legend>
+                <div class="input-container">
+                    <input name="nincho" id="nincho" value="" class="input" type="text" placeholder="exe:Eletronicos, eletrodomesticos..."  data-tipo="dataNascimento" required>
+                    <label class="input-label" for="nascimento">Qual Nincho</label>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
+                <div class="input-container">
+                    <input name="cpf" id="cpf" class="input" type="text"  placeholder="CNPJ" data-tipo="cpf" required >
+                    <label class="input-label" for="cpf">CNPJ</label>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend class="formulario__legenda">Endereço da Loja</legend>
+               <div class="input-container">
+                    <input name="cep" id="cep" class="input" type="text" placeholder="CEP" data-tipo="cep" pattern="[\d]{5}-?[\d]{3}" value="" required>
+                    <label class="input-label" for="cep">CEP</label>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
+               <div class="input-container">
+                    <input name="bairro" id="bairro" class="input" type="text" placeholder="bairro" data-tipo="bairro"  value="" required>
+                    <label class="input-label" for="bairro">Bairro</label>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
+
+                <div class="input-container">
+                    <input name="logradouro" id="logradouro" class="input" type="text" placeholder="Rua" date-tipo="logradouro" value="" required>
+                    <label class="input-label" for="logradouro">Rua</label>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
+                <div class="input-container">
+                    <input name="num-casa" id="num-casa" class="input" type="text" placeholder="num-casa" date-tipo="num-casa" value="" required>
+                    <label class="input-label" for="Número da Casa">Número</label>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
+
+                <div class="input-container">
+                    <input name="cidade" id="cidade" class="input" type="text" placeholder="Cidade" data-tipo="cidade" value="" required>
+                    <label class="input-label" for="cidade">Cidade</label>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
+                <div class="input-container">
+                    <input name="estado" id="estado" class="input" type="text" placeholder="Estado" data-tipo="estado" value="" required>
+                    <label class="input-label" for="estado">Estado</label>
+                    <span class="input-mensagem-erro">Este campo não está válido</span>
+                </div>
+
+
+            </fieldset>
+            <button class="botao_cadastro" id="botao" ><a href="pagina-login.html"> Pronto</a>
+            
+        </form>
+    </section>
+</main>
+      <section class="sobre container">
+        <div class="sobre__conteudo">
+            <h2 class="sobre__titulo">Sobre</h2>
+            <p class="sobre__texto">Mostre seu produtos ou servoços para toda sua cidade, e melhor <strong class="sobre__texto--destaque">SEM CUSTO</strong>!</p>
+            <p class="sobre__texto">
+              Na UniLojas você pode postar todos os se produtos e vender diretamente para seus clientes em nossa intervenção . 
+            </p>
+            <p class="sobre__texto sobre__texto--destaque sobre__texto--divisao">
+                Seus clientes verá seus produtos e quando ele se interessar entrara em contato pelos meios que voce deixar disponivel aqui na platafomra, exemplo: Telefone, whatsap, email, endereço e localizacao por GPS <br><br>
+
+                Sua loja será direcionada por localização facilitando as entregas dos produtos ou serviços.
+            </p>
+           
+            <p class="sobre__texto">Você terá 10  conexões grátis mensais, após as 10 conexões você receberá uma notificação e sua loja e seus produtos nao ficara visível.</p>
+            <p class="sobre__texto sobre__texto--destaque sobre__texto--divisao">
+                Escolha um dos planos a baixo.
+            </p>
+        </div>
+        
+    </section>
+    <section class="planos container">
+        <h2 class="planos__titulo">Planos</h2>
+        <ul class="planos__cartoes">
+            <li class="cartao cartao--start">
+                <h3 class="cartao__titulo">Livre</h3>
+                <article class="cartao__conteudo">
+                    <p class="cartao__preco"><em>R$ 10</em></p>
+                    <p class="cartao__texto">+ 10 conexões </p>
+                    <p class="cartao__texto">indementendete do tempo</p><br>
+                    
+                    <a href="plano.html" class="cartao__botao cartao__botao--mensal botao">Assinar plano</a>
+                </article>
+            </li>
+            <li class="cartao cartao--ultra">
+                <h3 class="cartao__titulo">Ultra</h3>
+                <article class="cartao__conteudo">
+                    <p class="cartao__preco"><em>R$ 1500</em></p>
+                    <p class="cartao__texto">20 manutenções mensais</p>
+                    <p class="cartao__texto">App SEO</p>
+                    <p class="cartao__texto">4 sistemas operacionais</p>
+                    <p class="cartao__texto">24h de atendimento</p><br>
+                    <a href="" class="cartao__botao cartao__botao--ultra botao">Assinar plano</a>
+                </article>
+            </li>
+            <li class="cartao cartao--mega">
+                <h3 class="cartao__titulo">Mega</h3>
+                <p class="cartao__preco"><em>R$ 1000</em></p>
+                <article class="cartao__conteudo">
+                    <p class="cartao__texto">10 manutenções mensais</p>
+                    <p class="cartao__texto">App SEO</p>
+                    <p class="cartao__texto">2 sistemas operacionais</p><br><br>
+                    <a href="" class="cartao__botao cartao__botao--mega botao">Assinar plano</a>
+                </article>
+            </li>
+        </ul>
+    </section>
+
+    
+</body>
+</html>

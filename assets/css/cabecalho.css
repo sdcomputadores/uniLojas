@@ -1,0 +1,108 @@
+.cabecalho {
+    background: var( --background_pricipal);
+    height: 10vh;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap ;
+}
+.logo{
+    position: absolute;
+    left: 0;
+    font-weight: bolder;
+    color: var(--cor-de-texto);
+}
+.logo_desc{
+
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    font-weight: bolder;
+    color: var(--cor-de-texto);
+}
+
+.munu__mini__item--buscar{
+    position: absolute;
+    width: 5.2rem;
+    height: 2rem;
+    font-size: .8rem;
+    border-radius: .5rem;
+    margin-top: .6rem;
+    margin-left: calc(100% - 14.5rem) ;
+}
+.munu__mini__item--btn-busca{
+    position: absolute;
+    width: 4.2rem;
+    height: 1.8rem;
+    font-size: .8rem;
+    border-radius: .5rem;
+    margin-top: .8rem;
+    margin-left: calc(100% - 8.8rem) ;
+
+    
+}
+.munu__mini__item--btn-menu{
+    position: absolute;
+    width: 3rem;
+    height: auto;
+    font-size: .8rem;
+    border-radius: .5rem;
+    margin-top: .2rem;
+    margin-left: calc(100% - 3.8rem) ;
+}
+.menu__mini__expandido,.menu__medio{
+    display: none;
+}
+.visivel{
+    display: block;
+}
+@media screen and (min-width: 0px){
+    .logo,.logo_desc{
+       display: none
+    }
+    
+}
+@media screen and (min-width: 320px){
+    .logo,.logo_desc{
+        display: block
+     }
+    
+}
+@media screen and (min-width: 720px){
+    .munu__mini__item--btn-menu{
+        display: none;
+    }
+   .menu__medio{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap ;
+        position: absolute;
+        top: 1rem;
+        left: 9.4rem;
+    }
+    .munu__mini__item--buscar{
+        position: absolute;
+        width: 5.2rem;
+        height: 2rem;
+        font-size: .8rem;
+        border-radius: .5rem;
+        margin-top: 1rem;
+        margin-left: calc(100% - 11.5rem) ;
+    }
+    .munu__mini__item--btn-busca{
+        position: absolute;
+        width: 4.2rem;
+        height: 1.8rem;
+        font-size: .8rem;
+        border-radius: .5rem;
+        margin-top: 1.2rem;
+        margin-left: calc(100% - 5.8rem) ;
+        
+    
+        
+    }
+    
+}
