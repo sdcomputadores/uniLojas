@@ -1,0 +1,1 @@
+function trocar(){document.getElementById("teste").innerHTML="Olá, Estrutura javascript"}
